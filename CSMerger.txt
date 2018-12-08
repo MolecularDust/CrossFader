@@ -1,0 +1,12 @@
+When you're done editing and debugging the script in Visual Studio:
+
+1. Run CSMerger.exe
+2. Click "Select Main Script .cs File" button and locate the main app .cs file in your project folder.
+3. Click "Merge All cs. Files In Folder", this will merge all of your classes, windows etc into one .cs putting the selected file first and combining "using" statements of multiple file into a single header so that it can be safely compiled when running the script from Vegas.
+4. Find the newly created file that is called like MyProject\MyProject_merged.cs, rename it and put into Vegas script folder. It's ready to use.
+
+Note that Vegas uses older C# version than current for scripts so some statements and operators may throw an error while compiling. For example, as of version 16 it doesn't understand auto-properties initialization in classes:
+
+public string MyProperty { get; set; } = "MyValue";
+
+or local functions and some other goodies. You'll have to revert to older techniques in this case.
