@@ -52,7 +52,6 @@ namespace CrossFader
             Settings.AllowLoops = false; // Allow crossfades to expand beyond clip's original length
             Settings.ShowDialog = true;  // Show dialog window or run the script with these settings without user prompt
             Settings.TransitionAndPresetName = ""; //Put transition and preset names here, e.g. "VEGAS Portals\\Mondrian" if you use the script non-interactively by changing Settings.ShowDialog to true
-            Settings.ExpandToAvailableSize = true;
 
             // ********* Do no change anything below unless you know what you're doing
 
